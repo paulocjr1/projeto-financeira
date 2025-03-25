@@ -1,0 +1,52 @@
+/* Navbar lateral fixa */
+.navbar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Garantir que os itens da navbar sejam exibidos em coluna e alinhados ao topo */
+.navbar-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  flex-grow: 1; /* Garante que os itens fiquem no topo */
+}
+
+.nav-item {
+  width: 100%;
+  text-align: left;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Ajustes de conteúdo principal */
+.content {
+  margin-left: 250px; /* Dá espaço suficiente à esquerda para o conteúdo */
+  padding: 20px;
+}
+
+/* Responsividade: Navbar no topo em telas pequenas */
+@media (max-width: 992px) {
+  .navbar {
+    position: relative; /* Navbar volta a ser relativa em telas pequenas */
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0; /* Retira a margem esquerda em dispositivos móveis */
+  }
+}
