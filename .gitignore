@@ -1,0 +1,12 @@
+# Ignorar a pasta virtualenv
+venv/
+
+# Ignorar arquivos de configuração do VSCode
+.vscode/
+
+# Ignorar arquivos de banco de dados
+*.sqlite3
+
+# Ignorar arquivos de cache do Python
+__pycache__/
+*.pyc
